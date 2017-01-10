@@ -29,6 +29,6 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public void save(Task task) {
-        taskDao.save(task);
+        taskDao.saveForCurrentUser(task);
     }
 }
